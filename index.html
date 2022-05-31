@@ -1,0 +1,22 @@
+<p>Loading, please wait...</p>
+<script>
+    document.write('Hello, world!');
+    console.log('Hello, developers!');
+    let n = Math.floor(Math.random() * 1000);
+    console.log(n);
+    let i = 0;
+    while (i < 6) {
+    const userGuess = prompt(`угадайте число, осталось попыток ${6-i}`);
+    i++;
+    if (isNaN(userGuess)) {
+        alert('ошибка');
+    } else if (userGuess == n) {
+        alert('угадали');
+        break;
+    } else if (userGuess < n) {
+        alert('больше');
+    } else if (userGuess > n) {
+        alert('меньше');
+    }}
+    alert('проиграли')
+  </script>
